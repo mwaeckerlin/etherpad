@@ -16,7 +16,7 @@ c.defaultPadText = "${DEFAULT_PAD_TEXT//\"/\\"}"
 c.suppressErrorsInPadText = true
 c.trustProxy = true
 c.automaticReconnectionTimeout = process.env.AUTOMATIC_RECONNECTION_TIMEOUT
-if ("${ADMIN}" && process.env.ADMIN_PWD) {
+if (process.env.ADMIN && process.env.ADMIN_PWD) {
   c.users = {
     '${ADMIN}': {
       'password': process.env.ADMIN_PWD,
